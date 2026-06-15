@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 1 Final Task</title>
+  </head>
+  <body>
+    <h1 id="start">Day 1 of learning HTML</h1>
+    <p>
+      Today, I have learned about HTML, it's structure, headings, paragraphs,
+      text format,links and navigation, images, lists.<br /><br />I'll showcase
+      each of them one by one.
+    </p>
+    <h2>What is HTML and it's basic structure</h2>
+    <p>
+      HTML stands for hypertext markup language. It is the standard markup
+      language for creating web applications and web apps. It basically tells
+      the browser what to display content and the type of that content with
+      different tags.<br />
+      <br />
+      Today I have learned many of those tags and how to use them for which
+      purpose. So lets check out few of those.
+    </p>
+    <h3>Headings</h3>
+    <p>
+      There are six levels of heading. From h1 to h6. <br />I have started this
+      code with h1, which is the biggest one and the size keeps decreasing all
+      the way to h6.<br />
+      We should always use one h1 for one page, use then use h2 and h3 under h2
+      and so on. <br />
+      This is for better SEO and accessibility.
+    </p>
+    <h3>Paragraphs</h3>
+    <p>
+      We use &lt;p&gt; tag for paragraphs. It is a block level element and it
+      creates a new line after the end of the paragraph. <br />
+      We can also use &lt;br /&gt; tag for line break without creating a new
+      paragraph. <br />
+    </p>
+    <h3>Text format</h3>
+    <p>
+      We can use &lt;strong&gt; tag to make text bold and &lt;em&gt; tag to make
+      text italic. <br />
+      However, we should use strong and em for importance and emphasis only, not
+      for styling. <br />
+      For styling, we should use CSS. <br />
+      or there is also &lt;b&gt; and &lt;i&gt; tags for bold and italic
+      respectively, but they are not recommended for use as they do not convey
+      any meaning. <br />
+    </p>
+    <h3>Links and navigation</h3>
+    <p>
+      It's mostly about &lt;a&gt; tags for creating links and &lt;nav&gt; tag
+      for navigation.<br />We can also set class and id in a tag and use a tag
+      to jump and navigate to that preferred destination.<br />For example,
+      <a href="#start">go to the beginning of the page</a>.<br /><br />There are
+      other attributes we can use inside a tag. href, target, rel etc. <mark>href="links/id"</mark> where you want to link to and <mark>Target="_blank"</mark> to open link in new tab and <mark>rel="noopener noreferrer"</mark> for security reasons.<br />Another
+      example,
+      <a href="https://www.google.com" target="_blank" rel="noopener noreferrer"
+        >Visit Google</a
+      >
+    </p>
+    <h3>Images</h3>
+    <p>
+      We can use &lt;img&gt; tag to add images to our webpage. <br />
+      It is a self closing tag and it has some important attributes like src,
+      alt, width, height etc.<br />For example,
+      <figure>
+        <img
+          src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+          alt="Google Logo"
+          width="200"
+        />
+        <figcaption><mark>Google Logo</mark></figcaption>
+      </figure>
+      <br />I used figure and figcaption tags to add caption to the image. This
+      way you can add caption below the image or above it.
+    </p>
+    <h3>Lists</h3>
+    This was the last topic I learned today. It was quite interesting. Basically
+    all the cool navbars and dropdowns are made with lists. Of course, you need css to design them.<br />
+    There are two types of lists. Ordered list and unordered list. <br />
+    We use &lt;ol&gt; tag for ordered list and &lt;ul&gt; tag for unordered
+    list. <br />
+    We use &lt;li&gt; tag to define each item in a list.<br />
+    For example,
+    <h4>Ordered List with Nested Unordered List</h4>
+    <ol>
+      <li>Skills I need to be a full-stack developer</li>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>Express.js</li>
+        <li>MongoDB</li>
+      </ul>
+    </ol>
+    <h4>Unordered List with Nested Ordered List</h4>
+    <ul>
+      <li>My favorite programming languages</li>
+      <ol>
+        <li>JavaScript</li>
+        <li>Python</li>
+      </ol>
+    </ul>
+    There is description list as well, we use &lt;dl&gt; tag for description list, &lt;dt&gt; tag for description term and &lt;dd&gt; tag for description definition.<br />
+    For example,
+    <h4>Description List</h4>
+    <dl>
+      <dt>HTML</dt>
+      <dd>Hypertext Markup Language</dd>
+      <dt>CSS</dt>
+      <dd>Cascading Style Sheets</dd>
+      <dt>JavaScript</dt>
+      <dd>A programming language for the web</dd>
+    </dl>
+
+    <a href="#start">Go back to the top</a>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation with Lists</title>
+    <style>
+        ul {
+            list-style-type: none; /* Remove default bullets */
+            padding: 0; /* Remove default padding */
+            margin: 0; /* Remove default margin */
+            background-color: #333; /* Background color for the nav */
+            border-radius: 25px; /* Rounded corners */
+            display: flex; /* Use flexbox for horizontal layout */
+            display: inline-block; /* Make the nav inline-block */
+        }
+
+        li {
+            display: inline; /* Display list items horizontally */
+        }
+
+        a {
+            display: inline-block; /* Make links block-level for better spacing */
+            color: white; /* Link color */
+            text-align: center; /* Center text */
+            padding: 14px 16px; /* Padding for links */
+            text-decoration: none; /* Remove underline from links */
+        }
+
+        a:hover {
+            background-color: #111; /* Change background on hover */
+            border-radius: 25px; /* Keep rounded corners on hover */
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Usage</title>
+</head>
+<body>
+    <!-- Basic image -->
+<img src="profile.jpg" alt="Profile photo of Shifat" width="300" height="300">
+
+<!-- Lazy-loaded image -->
+<img src="hero-bg.jpg" alt="Hero background" loading="lazy">
+
+<!-- Image with caption -->
+<figure>
+  <img src="https://www-cms.pipedriveassets.com/cdn-cgi/image/quality=70,format=auto/https://www-cms.pipedriveassets.com/Sales-graph-Pipedrive-combination-chart-example.png" height="300" alt="Q3 Revenue Chart">
+  <figcaption>Q3 Revenue — 40% increase over Q2</figcaption>
+</figure>
+
+<!-- Responsive image (browser picks best format) -->
+<picture>
+  <source srcset="hero.webp" type="image/webp">
+  <source srcset="hero.jpg" type="image/jpeg">
+  <img src="hero.jpg" alt="Hero image">
+</picture>
+
+<br>
+
+<!-- Inline SVG icon -->
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+</svg>
+</body>
+</html>
