@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms & Inputs</title>
+    <style>
+      ul {
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <form display="flex" action="/submit" method="POST">
+      <fieldset>
+        <legend>Personal Info</legend>
+        <ul>
+          <li>
+            <label for="name">Full Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name"
+              required
+            />
+          </li>
+          <li>
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="@"
+              required
+            />
+          </li>
+          <li>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required />
+          </li>
+          <li>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday" required />
+          </li>
+          <li>
+            <label for="rate">Rate:</label>
+            <input type="range" id="rate" min="0" max="100" value="25" name="rate" required />
+          </li>
+          <li>
+            <label for="fav-color">Favourite color:</label>
+            <input type="color" id="fav-color" name="fav-color" required />
+          </li>
+        </ul>
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="bd">Bangladesh</option>
+          <option value="de">Germany</option>
+          <option value="bd">India</option>
+          <option value="de">USA</option>
+          <option value="bd">UK</option>
+          <option value="de">Finland</option>
+        </select>
+      </fieldset>
+      <li>
+        
+      <label for="message">Message</label>
+      <textarea
+        id="message"
+        name="message"
+        rows="10"
+        cols="40"
+        placeholder="Write here..."
+      ></textarea>
+
+      <!-- Radio buttons -->
+        <ul>
+          Experience level:
+
+          <li>
+            <label
+              ><input type="radio" name="level" value="beginner" />
+              Beginner</label
+            >
+          </li>
+          <li>
+            <label
+              ><input type="radio" name="level" value="intermediate" />
+              Intermediate</label
+            >
+          </li>
+          <li>
+            <label><input type="radio" name="level" value="pro" /> Pro</label>
+          </li>
+        </ul>
+      <!-- Checkbox -->
+      <label>
+        <input type="checkbox" name="terms" required />
+        I agree to the terms
+      </label>
+
+      <button type="submit">Submit</button>
+      <button type="reset">Clear</button>
+    </form>
+  </body>
+</html>

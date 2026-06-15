@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semantic HTML Layout</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/home">Home</a></li>
+          <li><a href="/blog">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Latest Posts</h2>
+        <article>
+          <h3>Why I Chose Web3</h3>
+          <p>My journey into decentralized tech...</p>
+          <footer>
+            Published <time datetime="2025-06-01">June 1, 2025</time>
+          </footer>
+        </article>
+        <article>
+          <h3>Why I Chose fullstack development</h3>
+          <p>My journey into fullstack development sta...</p>
+          <footer>
+            Published <time datetime="2026-06-01">June 1, 2026</time>
+          </footer>
+        </article>
+      </section>
+
+      <aside>
+        <h3>About the Author</h3>
+        <p>Shifat — Web3 builder from Bangladesh.</p>
+      </aside>
+    </main>
+    <!-- No JS needed for accordion -->
+    <details>
+      <summary>What is Web3?</summary>
+      <p>Web3 is the next iteration of the internet built on blockchain...</p>
+    </details>
+
+    <!-- Progress bar -->
+    <label>Course progress:</label>
+    <progress value="60" max="100">60%</progress>
+
+    <!-- Native modal -->
+    <dialog id="myModal">
+      <h2>Confirm Action</h2>
+      <button onclick="document.getElementById('myModal').close()">
+        Close
+      </button>
+    </dialog>
+    <button onclick="document.getElementById('myModal').showModal()">
+      Open Modal
+    </button>
+    <footer>
+      <p>&copy; 2026 shifat.dev</p>
+    </footer>
+  </body>
+</html>

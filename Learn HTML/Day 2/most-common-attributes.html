@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes</title>
+</head>
+<body>
+    <!-- data-* attributes for JS -->
+<div class="product" data-id="101" data-price="49" data-category="web3">
+  Solana Course
+</div>
+
+<!-- Read in JavaScript, browser console -->
+<script>
+  const product = document.querySelector('.product');
+  console.log(product.dataset.id);       // "101"
+  console.log(product.dataset.price);    // "49"
+  console.log(product.dataset.category); // "web3"
+</script>
+</body>
+</html>
