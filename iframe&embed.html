@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iframe & embed</title>
+    <style>
+        .my-web{
+            border-radius: 20px;
+        }
+        .wiki{
+            border-radius: 50px;
+        }
+    </style>
+  </head>
+  <body>
+    <!--Youtube video embed... copy from any youtube video and try-->
+    <iframe
+      width="800"
+      height="500"
+      src="https://www.youtube.com/embed/NrsCej6SVxM?list=RDNrsCej6SVxM"
+      title="The Beauty of Existence - Heart Touching Nasheed"
+      frameborder="0"
+      allow="
+        accelerometer;
+        autoplay;
+        clipboard-write;
+        encrypted-media;
+        gyroscope;
+        picture-in-picture;
+        web-share;
+      "
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    <!-- Sandboxed iframe (security) Use other websites -->
+     <!--My website-->
+    <iframe
+      src="https://shifat.dev"
+      sandbox="allow-scripts allow-same-origin"
+      title="Sandboxed content"
+      height="700px"
+      width="400px"
+      class="my-web"
+    ></iframe>
+
+    <!--Wikipedia-->
+    <iframe
+      src="https://wikipedia.com"
+      sandbox="allow-scripts allow-same-origin"
+      title="Sandboxed content"
+      height="600px"
+      width="400px"
+      class="wiki"
+    ></iframe>
+  </body>
+</html>

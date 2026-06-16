@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video & Audio</title>
+    <style>
+      .bg-video {
+        position: fixed;
+
+        top: 0;
+
+        left: 0;
+
+        width: 100%;
+
+        height: 100%;
+
+        object-fit: cover; /* Fills screen without distortion */
+
+        z-index: -2;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Video with controls-->
+    <video src="wedding-nasheed.mp4" width="800px" controls>
+      Wedding Nasheed
+    </video>
+    <video src="w-tears-nasheed.mp4" width="550px" controls>
+      The Way of Tears
+    </video>
+
+    <br />
+    <!--Audio with controls-->
+    <audio src="wedding-nasheed.mp3" controls>Wedding Nasheed</audio>
+    <audio src="w-tears-nasheed.mp3" controls>The Way of Tears</audio>
+    <!--For multiple formats of same video, use <source> tag inside video tag, browser will play whichever is faster to load. for captions/subtitles use <track> tag inside as well.-->
+
+    <!--Background Animation video, check style tag-->
+
+    <video src="bg-video-d3.mp4" autoplay loop muted class="bg-video"></video>
+  </body>
+</html>

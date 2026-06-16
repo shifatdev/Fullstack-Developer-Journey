@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility</title>
+</head>
+<body>
+    <!-- Skip link (lets keyboard users skip to main content) -->
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<!-- Landmark roles -->
+<header role="banner"></header>
+<nav aria-label="Main navigation"></nav>
+<main id="main" role="main"></main>
+
+<!-- Icon button (accessible) -->
+<button aria-label="Close menu" aria-expanded="false">
+  <svg aria-hidden="true">...</svg>
+</button>
+
+<!-- Live region for notifications -->
+<div aria-live="polite" aria-atomic="true" id="notifications"></div>
+
+<!-- Form with full accessibility -->
+<div role="group" aria-labelledby="pwd-label">
+  <label id="pwd-label" for="password">Password</label>
+  <input type="password" id="password"
+         aria-describedby="pwd-hint" required>
+  <p id="pwd-hint">Min 8 characters, one number required</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-5 Elements & APIs</title>
+</head>
+<body>
+
+<!---Need to learn JavaScript!!!-->
+
+
+
+    <!-- Canvas: draw with JS -->
+<canvas id="myCanvas" width="400" height="200">
+  Canvas not supported
+</canvas>
+<script>
+  const ctx = document.getElementById('myCanvas').getContext('2d');
+  ctx.fillStyle = '#f0e040';
+  ctx.fillRect(10, 10, 350, 200);
+  ctx.fillStyle = '#0a0a0f';
+  ctx.font = '20px monospace';
+  ctx.fillText('Hello Canvas! Drawn with JS', 20, 60);
+</script>
+
+<!-- Template: reusable HTML -->
+<template id="card-template">
+  <div class="card">
+    <h3 class="card-title"></h3>
+    <p class="card-body"></p>
+  </div>
+</template>
+<script>
+  const tmpl = document.getElementById('card-template');
+  const clone = tmpl.content.cloneNode(true);
+  clone.querySelector('.card-title').textContent = 'Calc Guide';
+  document.body.appendChild(clone);
+</script>
+
+<!-- Output element -->
+<form oninput="result.value = parseInt(a.value) + parseInt(b.value)">
+  <input type="number" id="a" value="10"> +
+  <input type="number" id="b" value="20"> =
+  <output name="result">30</output>
+</form>
+</body>
+</html>

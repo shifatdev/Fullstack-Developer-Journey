@@ -1,0 +1,59 @@
+<!-- 1. External CSS (best practice) -->
+<link rel="stylesheet" href="style.css">
+
+<!-- 2. Internal CSS (inside head) -->
+<style>
+  .card { background: #111; padding: 20px; }
+  #hero { font-size: 48px; }
+  h1 { color: yellow; }
+</style>
+
+<!-- 3. Inline CSS (avoid for complex styles) -->
+<p style="color: red; font-size: 18px">Red text</p>
+
+<!-- CSS targets HTML via: -->
+<!-- Tag name: h1, p, div        -->
+<!-- Class: .card, .btn-primary   -->
+<!-- ID: #hero, #nav              -->
+<!-- Attribute: [type="text"]     -->
+<!-- State: a:hover, p:first-child -->
+
+<!-- Link external JS (before /body) -->
+<script src="app.js" defer></script>
+
+<!-- defer: wait for HTML to parse, then run -->
+<!-- async: run as soon as downloaded -->
+
+<!-- JS selects HTML elements by: -->
+<script>
+  // By ID
+  const hero = document.getElementById('hero');
+
+  // By class (returns NodeList)
+  const cards = document.querySelectorAll('.card');
+
+  // By CSS selector
+  const btn = document.querySelector('button[type="submit"]');
+
+  // Change content
+  hero.textContent = 'New Title';
+  hero.innerHTML = '<strong>Bold Title</strong>';
+
+  // Change CSS class
+  hero.classList.add('active');
+  hero.classList.toggle('dark-mode');
+
+  // Change attributes
+  document.querySelector('img').src = 'new-image.jpg';
+
+  // Listen for events
+  btn.addEventListener('click', () => {
+    alert('Form submitted!');
+  });
+
+  // Create elements dynamically
+  const newDiv = document.createElement('div');
+  newDiv.className = 'card';
+  newDiv.textContent = 'New card';
+  document.body.appendChild(newDiv);
+</script>
