@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Task</title>
+
+    <!--SEO-->
+    <meta
+      name="description"
+      content="Page decription, explain shortly what's the page about"
+    />
+    <meta name="keywords" content="" />
+    <!--Not important-->
+    <meta name="author" content="Sarowar Shifat" />
+    <meta name="robots" content="index, follow" />
+    <!--This is default. Not using won't affect.-->
+
+    <!--Open Graph(OG)- Facebook, Discord, Whatsapp etc preview. -->
+    <meta property="og:title" content="Sarowar Shifat - Fullstack Developer" />
+    <meta
+      property="og:description"
+      content="I'm Sarowar Shifat from Bangladesh. I'm on a journey to become a full stack developer."
+    />
+    <meta property="og:image" content="yourwebsite-link/image.png" />
+    <meta property="og:url" content="yourwebsite-link" />
+    <meta property="og:type" content="website" />
+
+    <!--Use 1200x630 image for cards.-->
+
+    <!--Twittwe(X) card, X uses their own card system for website preview. However, it ism't that different.-->
+    <meta name="twitter:card" content="summary_large_image" />
+    <!--How the card will appear when website link shared.-->
+    <meta name="twitter:title" content="same as before titles" />
+    <meta
+      name="twitter:description"
+      content="same as before description. try to make it short"
+    />
+    <meta name="twitter:image" content="yourwebsite-link/image" />
+    <!--Use if you have X account-->
+    <meta name="twitter:site" content="@xusername" />
+    <meta name="twitter:creator" content="@yourusername" />
+
+    <!--To tell search engine this is the main source of content if your website contents can be accessed through multiple links-->
+    <link rel="canonical" href="yourwebsite(main-content-source-link)" />
+    <!--Link CSS-->
+    <link rel="stylesheet" href="stylesheetname" />
+  </head>
+  <body>
+    <header>
+      <!--For logo/brand name and navigation. Mostly things that will be accessible to navigate the page-->
+      <!--Add logo or brand name here-->
+      <!--Then Navigation-->
+      <nav>
+        <!--Design with CSS for cool navbars-->
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+    <main>
+      <!--Hero, about, projetcs and other contents of the website are written here. Divide contents with different sections-->
+      <section class="hero">
+        <!--The first section, the landing page contents. Use short but familiar h1 heading and CTA(call to action) button here.-->
+        <h1>Building Modern, reliable, fast websites</h1>
+
+        <!--CTA- 1 or 2 buttons-->
+        <button><a href="#projects">My Works</a></button>
+        <button><a href="#contact">Hire me</a></button>
+      </section>
+
+      <section class="projects" id="projects">
+        <h2>Projects I have worked on</h2>
+
+        <article>
+          <h3>Project 1- Google</h3>
+          <img src="" alt="google-img" />
+          <p>It was quite hard project. The challenge was really tough.</p>
+          <a href="">view live project</a>
+        </article>
+        <article>
+          <h3>Project 2- Youtube</h3>
+          <img src="" alt="Youtube-img" />
+          <p>It was quite hard project. The challenge was really tough.</p>
+          <a href="">view live project</a>
+        </article>
+        <article>
+          <h3>Project 3- Facebook</h3>
+          <img src="" alt="Facebook-img" />
+          <p>It was quite hard project. The challenge was really tough.</p>
+          <a href="">view live project</a>
+        </article>
+      </section>
+      <hr />
+      <section>
+        <h2>Why you should hire me</h2>
+        <table border="1px">
+          <thead>
+            <tr>
+              <th>DEVS</th>
+              <th>Cost</th>
+              <th>Time</th>
+              <th>Service</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Others</th>
+              <th>High</th>
+              <th>Long</th>
+              <th>Moderate</th>
+            </tr>
+            <tr>
+              <th>ME</th>
+              <th>Efficient</th>
+              <th>Fast enough</th>
+              <th>Full time support for anything</th>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>FAQ</h2>
+        <details>
+          <summary>Who created this page?</summary>
+          The creator of this page is Sarowar Shifat. Who is currently learning html and on his way to become a fullstack developer.
+        </details>
+        <details>
+            <summary>What is HTML?</summary>
+            HTML is the foundation of a website, just like skeleton of a body. It stands for HyperText Markup Language.
+        </details>
+        <details>
+            <summary>How to learn HTML?</summary>
+            HTML is quite easy to learn, so no worries. Follow the step by step guide in my website, and you'll be a pro is 3-4 dyas. But remember, practicing is the key.
+        </details>
+      </section>
+      <section class="extra">
+        <h3>A beautiful nasheed for you</h3>
+        <iframe width="700" height="370" src="https://www.youtube.com/embed/71hi9H6fZuc?list=RD71hi9H6fZuc" title="Nasheed Ya Adheeman - Ahmed Bukhatir  نشيد يا عظيما - أحمد بوخاطر - Arabic Music Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </section>
+      <section class="contact" id="contact">
+        <h2>My Contact info</h2>
+        <a href="">Reddit</a><br>
+        <a href="">Telegram</a><br>
+        <a href="">Twitter(X)</a><br>
+        <a href="">Discord</a><br>
+        <a href="">Linkedin</a><br>
+        <a href="">Youtube</a><br>
+
+        <form action="get">
+          <fieldset>
+            <legend>Contact Me</legend>
+            <label for="email">Email:</label>
+            <input type="email" placeholder="your email" id="email" required />
+            <br />
+            <label for="message">Message:</label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="write here"
+              cols="20"
+              rows="10"
+              required
+            ></textarea>
+            <button>Send</button>
+            <button>Reset</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer>
+        &copy;2026 Sarowar Shifat
+    </footer>
+    <!--Link Javascript file-->
+    <script src="jsfile"></script>
+  </body>
+</html>
