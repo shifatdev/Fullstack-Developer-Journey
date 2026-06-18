@@ -1,0 +1,105 @@
+<!--
+/*
+
+3 ways to use CSS.
+
+1. Inline CSS. Example: <p color="red">Hello world<p>,, here color attribute is CSS used for styling.
+
+2. With <style> tag inside <head></head> element. Example:
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style> <!--Like This-->
+        body {
+            background-color: yellow;
+        }
+    </style>  
+</head>
+<body></body>
+</html>
+
+3. Best way-- Linking CSS file in <head></head> with link tag. Example: 
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css"> <!--Like This-->
+</head>
+<body></body>
+</html>
+
+
+
+
+
+
+
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css"> <!--Like This-->
+</head>
+<body> parent
+    <h1 class="heading" id="main-heading"></h1>child
+    <p></p> sibling
+</body>
+</html>
+
+CSS priority--
+The more specific you are, the more priority that css gets. 
+
+inline css > id > class > element
+
+
+target element
+h1{
+
+}
+target class
+.class-name{
+
+}
+target id
+#id-name{
+
+}
+inline css goes inside the HTML element tag like above example.
+
+universal= target all element
+*{
+
+} 
+
+
+
+
+padding= space inside element
+margin= space outside
+
+
+
+common css to use in every css file start
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+*/
+-->
+
+
+
+CSS is short- break your website into different parts and design each one separately or in group to look as you want them.
